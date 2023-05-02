@@ -1,18 +1,25 @@
 import React from 'react'
 import CartWidget from './CartWidget'
 import './navbar.css'
+import { NavLink } from 'react-router-dom'
 
 
 function Navbar() {
   
     return (
         <header>
-           <a href="#" className="navbar-brand">SmartBuy</a>
+           <NavLink to="/" className="navbar-brand">SmartBuy</NavLink>
                 <nav>
                     <ul className="nav__links">
-                        <li><a href="#">Electronics</a></li>
-                        <li><a href="#">Computers</a></li>
-                        <li><a href="#">Home & Deco</a></li>
+                        <li>
+                            <NavLink to="category/electronic">Electronic</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="category/computer">Computer</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="category/home-deco">Home & Deco</NavLink>
+                        </li>
                     </ul>
                 </nav>  
                 <CartWidget />
@@ -20,4 +27,4 @@ function Navbar() {
     )
   }
   
-  export default Navbar
+export default Navbar
