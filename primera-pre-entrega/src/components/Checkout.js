@@ -1,7 +1,7 @@
 import React, {useContext, useEffect, useState} from 'react';
 import validator from 'validator';
 import { Formik } from 'formik';
-import { CartContext } from '../context/cartContext';
+import { CartContext } from '../context/CartContext';
 import { v4 as uuidv4 } from 'uuid';
 import { NavLink } from 'react-router-dom';
 import { saveDoc } from '../service/firebase.service';

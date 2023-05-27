@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import cartimg from '../assets/shopping-cart.png'
-import { CartContext } from '../context/cartContext'
+import { CartContext } from '../context/CartContext'
 import { NavLink } from 'react-router-dom';
 
 function CartWidget () {
