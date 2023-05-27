@@ -41,3 +41,7 @@ Checkout: El proceso de pago (checkout) solo está habilitado si hay productos e
 Orden: Una vez que tienes productos en el carrito, puedes completar el formulario de pago (checkout) para realizar una orden. El formulario cuenta con validaciones.
 
 Orden Exitosa: Cuando se completa con éxito una orden, se guarda el registro en la colección "orders".
+
+Ejemplo de funcionamiento
+----------------------
+https://youtu.be/tKyWU51xB0E
