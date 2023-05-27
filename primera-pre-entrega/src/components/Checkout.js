@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 import { saveDoc } from '../service/firebase.service';
 import './checkout.css'
 
-const Checkout = () => {
+export const Checkout = () => {
 
 	const {cartList, removeList} = useContext(CartContext)
 	const [isCreated,setIsCreated] = useState(false)
@@ -159,5 +159,3 @@ const Checkout = () => {
     </>
   );
 }
-
-export default Checkout;

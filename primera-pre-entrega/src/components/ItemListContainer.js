@@ -19,7 +19,7 @@ const fetchData = async (setData, category) => {
   }
 };
 
-function ItemListContainer () {
+export function ItemListContainer () {
   const [ data, setData ] = useState([]);
   const { category } = useParams()
 
@@ -42,5 +42,3 @@ function ItemListContainer () {
     </div>
   );
 }
-
-export default ItemListContainer

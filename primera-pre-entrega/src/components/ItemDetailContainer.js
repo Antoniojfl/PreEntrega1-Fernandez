@@ -4,7 +4,7 @@ import ItemDetail from './ItemDetail'
 import { getDocumentById } from '../service/firebase.service'
 import './itemlistcontainer.css'
 
-function ItemDetailContainer () {
+export function ItemDetailContainer () {
   const fetchData = async (setItem, id) => {
     try {
       const product = await getDocumentById('products',id)
@@ -33,5 +33,3 @@ function ItemDetailContainer () {
     </div>
   );
 }
-
-export default ItemDetailContainer

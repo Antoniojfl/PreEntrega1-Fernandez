@@ -33,5 +33,8 @@ export default defineConfig({
             ],
         },
     },
+    define: {
+        'process.env': {}
+      },
     plugins: [react()],
 });
