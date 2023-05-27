@@ -17,7 +17,8 @@ const firebaseConfig = {
   projectId: REACT_APP_projectId,
   storageBucket: REACT_APP_storageBucket,
   messagingSenderId: REACT_APP_messagingSenderId,
-  appId: REACT_APP_appId
+  appId: REACT_APP_appId,
+  experimentalAutoDetectLongPolling: true
 };
 
 const app = initializeApp(firebaseConfig);
