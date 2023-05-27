@@ -1,14 +1,26 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import cartimg from '../assets/shopping-cart.png'
+import { CartContext } from '../context/cartContext'
+import { NavLink } from 'react-router-dom';
 
 function CartWidget () {
+
+  const {cartList} = useContext(CartContext);
+  const totalItemsInCart = cartList.reduce((sum, item) => sum + item.itemQuantity, 0)
   return (
-    <div className="cart">
-        <a href="#">
-            <img src={cartimg} alt="Shopping Cart"/>
-            <span className="cart-counter">5</span>
-        </a>
-    </div>
+    <>
+      {cartList.length === 0 ? 
+        <></>
+      :
+      <NavLink to="/cart">
+        <div className="cart">
+                <img src={cartimg} alt="Shopping Cart" />
+                <span className="cart-counter">{totalItemsInCart}</span>
+        </div>
+      </NavLink>
+      
+      }
+    </>
   )
 }
 
