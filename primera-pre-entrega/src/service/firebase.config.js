@@ -15,10 +15,3 @@ console.log('firebaseConfig: ', firebaseConfig)
 const app = initializeApp(firebaseConfig);
 
 export const db = getFirestore(app)
-
-/* REACT_APP_apiKey=AIzaSyD2hh9zBNzHv1CHvkBBECdVRyDdDcTHRgw
-REACT_APP_authDomain=final-project-react-store.firebaseapp.com
-REACT_APP_projectId=final-project-react-store
-REACT_APP_storageBucket=final-project-react-store.appspot.com
-REACT_APP_messagingSenderId=493502684971
-REACT_APP_appId=1:493502684971:web:56b53c7ce98253bd956f6e */
