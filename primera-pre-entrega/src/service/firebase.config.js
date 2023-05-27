@@ -1,5 +1,4 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore"
 
 const {
   REACT_APP_apiKey,
@@ -17,9 +16,11 @@ const firebaseConfig = {
   projectId: REACT_APP_projectId,
   storageBucket: REACT_APP_storageBucket,
   messagingSenderId: REACT_APP_messagingSenderId,
-  appId: REACT_APP_appId,
-  experimentalAutoDetectLongPolling: true
+  appId: REACT_APP_appId
 };
 
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app)
+
+export const db = app.firestore({
+  experimentalForceLongPolling: true,
+});
